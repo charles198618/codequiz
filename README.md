@@ -1,93 +1,31 @@
 # codequiz
 
-# 04 Web APIs: Code Quiz
+## Description 
 
-## Your Task
+This is an appication that allows users to take the quiz. Basically, it gives the user the possibility to take the quiz with multiple questions. Thus, the user picks the answer and submit it. Notice that the quiz is taken for a time well set. Moreover,This app will run in the browser.
 
-As you proceed in your journey to becoming a full-stack web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
+Thus, the messages will be displaying to ask the user to start the quiz. Once the user starts taking the quiz, the time stars counting down. So every time the user clicks to pick the answer, he will move to the next question and so on.
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework will teach you all the skills you need to succeed in this assignment.
+The following image demonstrates the application functionality:
 
+![code quiz](./assets/codequizdemo.PNG)
 
-## User Story
+Below is the link to Deployment:
+https://charles198618.github.io/passwordgenerator/
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## OBJECTIVES
 
-
-## Acceptance Criteria
-
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+The motivation that pushed me to realize this project is because I wanted to solve a problem in society. I wanted to make the life of professor and students easier, by making this application. Therefore, the professor don't need to look at his clock everytime while students are taking quizzes or exams. So once the time is over, students will stop taking the quizz.
 
 
-## Mock-Up
+## Languages used
 
-The following animation demonstrates the application functionality:
-
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
-
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+In order to get to this result, I have use HTML, CSS, and JavaScript, Dom, and Jquery. First of all, we can think about HTML as a body. it stands for Hypertext Markup Language. Basically, it is a language that we can use to create web pages. Thus every single on internet is written using HTML. Moreover, it includes elements on the pages, images on the pages, the orders of the appearance of elements and so on. Secondly, we have CSS that stands for Cascading Style Sheet. It is used to make our website beautiful. It's used to define the cell padding of table cells, the style, the thickness, and color of a table's border, and the padding around images or other objects. The third most important element to point out is JavaScript. It is a pragramming language like Java, PHP, Python, C++. It's considered as the brain in human body. It allows us to implement complex features on web pages, animated graphics, interactive maps and so on.  It's with JavaScript that we have succeded to make this project work.
+Thus, DOM stands for Document Object Model. It's an application programming interface that for HTML and Script. It helps us to define the logical 
+structure of documents. We can easily manipulate every tag of HTML in order such as grandparent, parent, children and so on.
+We also have Jquery which is a library that contains many features such as HTML,DOM, AJAX, CSS manipulation and so on. Moreover, it helps us to accomplish many tasks and make them easier. Thus we can manipulate Dom easily. 
 
 
-## Review
+## Challenges met
 
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+There was many challenges during the realization of this project. The big obstacle was how to use JavaScript, DOM, and Jquery.
