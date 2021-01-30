@@ -8,7 +8,7 @@ var optionFour = document.querySelector("#option4")
 var startBlock = document.querySelector("#startBlock")
 var questionBlock = document.querySelector("#questionBlock")
 
-var countdown = 300
+var countdown = 15
 timeRemainingEl.textContent = countdown;
 var currentQuestion;
 var questionBank = [
@@ -43,7 +43,7 @@ function startQuiz() {
     questionBlock.setAttribute("class", "")
 
     currentQuestion = 0;
-    countdown = 300;
+    countdown = 15;
 
     timerStart()
     changeQuestion()

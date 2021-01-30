@@ -11,7 +11,7 @@ The following image demonstrates the application functionality:
 ![code quiz](./assets/codequizdemo.PNG)
 
 Below is the link to Deployment:
-https://charles198618.github.io/passwordgenerator/
+https://charles198618.github.io/codequiz/
 
 ## OBJECTIVES
 
