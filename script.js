@@ -7,10 +7,18 @@ var optionThree = document.querySelector("#option3")
 var optionFour = document.querySelector("#option4")
 var startBlock = document.querySelector("#startBlock")
 var questionBlock = document.querySelector("#questionBlock")
+var scoreBlock = document.querySelector("#scoreBlock")
+var scoreTotal = document.querySelector("#scoreTotal")
+var timeTakenEl = document.querySelector("#timeTaken")
+var inputEl = document.querySelector("#inputInitials")
+var saveBtn = document.querySelector("#saveBtn")
 
-var countdown = 15
-timeRemainingEl.textContent = countdown;
+var originalTime = 60
+var countdown;
+timeRemainingEl.textContent = originalTime;
 var currentQuestion;
+var score;
+
 var questionBank = [
     {
         question: "In CSS, what is the box model?",
@@ -43,7 +51,8 @@ function startQuiz() {
     questionBlock.setAttribute("class", "")
 
     currentQuestion = 0;
-    countdown = 15;
+    countdown = 60;
+    score = 0;
 
     timerStart()
     changeQuestion()
@@ -56,8 +65,9 @@ function timerStart(){
 
         if(countdown <=0 || currentQuestion > questionBank.length){
             clearInterval(timerInterval)
-            startBlock.setAttribute("class", "");
+            scoreBlock.setAttribute("class", "");
             questionBlock.setAttribute("class", "hidden")
+            scoreTest(score, questionBank.length);
         }
     }, 1000)
 }
@@ -78,16 +88,51 @@ function checkAnswerAndChange (){
     var lastA = this.textContent;
     if(lastA == questionBank[currentQuestion-1].correct){
         console.log("correct Answer")
+        score += 1
     }else{
         console.log("incorrect Answer")
+        countdown -= 10
     }
 
     changeQuestion()
 }
+
+
+function savetolocal(){
+    var scoreToSave = scoreTotal.textContent + " - " + inputEl.value
+    localStorage.setItem("Highscore", scoreToSave)
+}
+
 startBtn.addEventListener("click", startQuiz)
 optionOne.addEventListener("click", checkAnswerAndChange)
 optionTwo.addEventListener("click", checkAnswerAndChange)
 optionThree.addEventListener("click", checkAnswerAndChange)
 optionFour.addEventListener("click", checkAnswerAndChange)
+saveBtn.addEventListener("click", savetolocal)
+// Ask each question
+//function askQuestion(question) {
+    //var answer = prompt(question[0], "");
+    //if (answer.toUpperCase() == answer_key[i]) {
+      //alert("Correct!");
+//       score++;
+//     } else if (answer==null || answer=="") {
+//       alert("You must enter T or F!");
+//       i--;
+//     } else {
+//       alert("Sorry. The correct answer is " + answer_key[i]);
+//     }
+//   }
+//   for (var i = 0; i < questions.length; i++) {
+//     askQuestion(questions[i]);
+//   }
+  
+  // Caclulate score
+function scoreTest(answer, questions) {
+    console.log(answer, questions)
+    var percentage = (answer/questions) * 100;
+    scoreTotal.textContent = percentage + "%"
+    var timeTaken = originalTime - countdown;
+    timeTakenEl.textContent = timeTaken + " seconds"
+}
 
 
