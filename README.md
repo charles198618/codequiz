@@ -13,6 +13,7 @@ The following image demonstrates the application functionality:
 Below is the link to Deployment:
 https://charles198618.github.io/codequiz/
 
+
 ## OBJECTIVES
 
 The motivation that pushed me to realize this project is because I wanted to solve a problem in society. I wanted to make the life of professor and students easier, by making this application. Therefore, the professor don't need to look at his clock everytime while students are taking quizzes or exams. So once the time is over, students will stop taking the quizz.
